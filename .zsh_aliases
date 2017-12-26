@@ -1,0 +1,19 @@
+# https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+
+# tmux
+alias tmuxinit="tmux new-session -n default 'ctop' \; split-window -dh 'htop' \; split-window -dv \; select-pane -t 0 \; split-window -v \; clock-mode \; select-pane -t 2"
+
+# Shell shortcuts
+alias c=clear
+alias l='exa -la -snew --git'
+alias vim-go='vim -u ~/.vimrc.go'
+alias k=kubectl
+alias w='watch -n1'
+
+# Variables
+export EMBA=/Users/micha/_DEV/_GO/src/github.com/embano1
+export GOPATH=/Users/micha/_DEV/_GO
+export GOBIN=/Users/micha/_DEV/_GO/bin
+export PATH=$PATH:$GOBIN
+
