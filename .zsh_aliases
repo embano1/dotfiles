@@ -12,8 +12,8 @@ alias k=kubectl
 alias w='watch -n1'
 
 # Variables
-export EMBA=/Users/micha/_DEV/_GO/src/github.com/embano1
-export GOPATH=/Users/micha/_DEV/_GO
-export GOBIN=/Users/micha/_DEV/_GO/bin
+export EMBA=/Users/${USER}/GO/src/github.com/embano1
+export GOPATH=/Users/${USER}/GO
+export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 

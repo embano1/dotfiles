@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/micha/.oh-my-zsh
+export ZSH=/Users/${USER}/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -14,10 +14,10 @@ export ZSH=/Users/micha/.oh-my-zsh
 ZSH_THEME="bullet-train/bullet-train"
 
 # bullet-train
-BULLETTRAIN_KCTX_KCONFIG="/Users/micha/.kube/config"
+BULLETTRAIN_KCTX_KCONFIG="/Users/${USER}/.kube/config"
 BULLETTRAIN_PROMPT_CHAR="\n\$"
 BULLETTRAIN_STATUS_EXIT_SHOW="true"
-BULLETTRAIN_CONTEXT_DEFAULT_USER="micha"
+BULLETTRAIN_CONTEXT_DEFAULT_USER="${USER}"
 BULLETTRAIN_PROMPT_ORDER=(
   context
   kctx
@@ -126,5 +126,7 @@ source <(kubectl completion zsh)
 # auto-completion/ syntax highlighting
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='bg=235,fg=100'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='bg=235,fg=100'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 
