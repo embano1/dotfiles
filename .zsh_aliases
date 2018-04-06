@@ -2,7 +2,8 @@
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 # tmux
-alias tmuxinit="tmux new-session -n default 'ctop' \; split-window -dh 'htop' \; split-window -dv \; select-pane -t 0 \; split-window -v \; clock-mode \; select-pane -t 2"
+#alias tmuxinit="tmux new-session -n default 'ctop' \; split-window -dh 'htop' \; split-window -dv \; select-pane -t 0 \; split-window -v \; clock-mode \; select-pane -t 2"
+alias tmuxinit="tmux new-session -n init \; split-window -dh \; select-pane -t 1 \; split-window -dv -p 80 'ctop' \; clock-mode \; select-pane -t 0 \; new-window -n htop 'htop' \; select-window -t 1"
 
 # Shell shortcuts
 alias c=clear
