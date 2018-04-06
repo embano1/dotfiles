@@ -82,7 +82,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir vcs virtualenv ssh)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx)
+plugins=(git brew osx docker autoenv)
 
 source $ZSH/oh-my-zsh.sh
 
