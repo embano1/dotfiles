@@ -31,14 +31,14 @@ BULLETTRAIN_PROMPT_ORDER=(
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Powerlevel9k custom config
-DEFAULT_USER=$USER
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#DEFAULT_USER=$USER
+#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=" --"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="↳ "
 
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time go_version ip)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs go_version)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir vcs virtualenv ssh)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs go_version)
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir vcs virtualenv ssh)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,7 +82,10 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir vcs virtualenv ssh)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx docker autoenv)
+#plugins=(git brew osx docker autoenv)
+# installed autoenv manually to get latest version with support for leave
+# https://github.com/kennethreitz/autoenv 
+plugins=(git brew osx docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,9 +124,16 @@ source ~/.zsh_aliases
 source <(kubectl completion zsh)
 
 # fuzzy find fzf
+# brew install fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# autoenv
+# git remote: origin	git://github.com/kennethreitz/autoenv.git
+source ~/.autoenv/activate.sh
+AUTOENV_ENABLE_LEAVE=yes
+
 # auto-completion/ syntax highlighting
+# brew install zsh-autosuggestions zsh-syntax-highlighting
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='bg=235,fg=100'
