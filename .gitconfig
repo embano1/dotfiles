@@ -1,16 +1,22 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Michael Gasch
-#	email = michael_gasch@live.com
+	name = Michael Gasch
+	email = embano1@live.com
+
 [credential]
 	helper = osxkeychain
-[user]
-	email = embano1@live.com
+
 [core]
 	pager = 
 	editor = vim
+
 [diff]
 	tool = default-difftool
+
 [difftool "default-difftool"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+	
+[alias]
+	undo = reset --soft HEAD~1
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
+	unstage = reset HEAD --
