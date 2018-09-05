@@ -142,3 +142,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 
 # VKE completion
 source ~/.completion/vke_bash_completion.sh
+
+# CDPATH
+setopt auto_cd
+cdpath=($EMBA $HOME/Dropbox \(Personal\))

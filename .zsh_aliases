@@ -11,10 +11,11 @@ alias l='exa -la -snew --git'
 alias vim-go='vim -u ~/.vimrc.go'
 alias k=kubectl
 alias w='watch -n1'
+alias cat=bat
 
 # Variables
 export EMBA=/Users/${USER}/GO/src/github.com/embano1
 export GOPATH=/Users/${USER}/GO
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
-
+export EDITOR=/usr/local/bin/vim
