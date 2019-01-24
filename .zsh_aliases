@@ -7,11 +7,15 @@ alias tmuxinit="tmux new-session -n init \; split-window -dh \; select-pane -t 1
 
 # Shell shortcuts
 alias c=clear
-alias l='exa -la -snew --git'
+alias l='exa -lha -snew --git'
 alias vim-go='vim -u ~/.vimrc.go'
 alias k=kubectl
 alias w='watch -n1'
 alias cat=bat
+alias ping=prettyping
+alias untar='tar -zxvf ' # https://opensource.com/article/18/9/handy-bash-aliases
+alias myip='curl ipinfo.io/ip'
+
 
 # Variables
 export EMBA=/Users/${USER}/GO/src/github.com/embano1
