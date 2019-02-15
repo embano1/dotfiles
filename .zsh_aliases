@@ -16,6 +16,8 @@ alias ping=prettyping
 alias untar='tar -zxvf ' # https://opensource.com/article/18/9/handy-bash-aliases
 alias myip='curl ipinfo.io/ip'
 
+# Applications
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
 # Variables
 export EMBA=/Users/${USER}/GO/src/github.com/embano1
