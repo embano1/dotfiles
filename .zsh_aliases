@@ -25,3 +25,4 @@ export GOPATH=/Users/${USER}/GO
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 export EDITOR=/usr/local/bin/vim
+export JAVA_HOME=`/usr/libexec/java_home -v 11.0` # https://stackoverflow.com/a/6588410
