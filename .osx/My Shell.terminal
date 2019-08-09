@@ -611,6 +611,8 @@
 	gA2EDYsNlA2ZDaYNqQ22DbsNww3GDdgN2w3gAAAAAAAAAgEAAAAAAAAALwAAAAAAAAAA
 	AAAAAAAADeI=
 	</data>
+	<key>Bell</key>
+	<false/>
 	<key>CursorBlink</key>
 	<true/>
 	<key>CursorColor</key>
@@ -700,11 +702,11 @@
 	AAAcAAAAAAAAAAAAAAAAAAAA1g==
 	</data>
 	<key>FontAntialias</key>
-	<false/>
+	<true/>
 	<key>FontWidthSpacing</key>
 	<real>0.99596774193548387</real>
 	<key>ProfileCurrentVersion</key>
-	<real>2.0499999999999998</real>
+	<real>2.0600000000000001</real>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGKyxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
