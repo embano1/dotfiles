@@ -7,9 +7,9 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="cobalt2"
-#ZSH_THEME="avit"
+ZSH_THEME="avit"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="bullet-train/bullet-train"
 
@@ -85,7 +85,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 #plugins=(git brew osx docker autoenv)
 # installed autoenv manually to get latest version with support for leave
 # https://github.com/kennethreitz/autoenv 
-plugins=(git brew osx docker)
+plugins=(vi-mode git brew osx docker zsh-autopair)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,7 +107,7 @@ export LANG=en_US.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -119,6 +119,9 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.zsh_aliases
+
+# Custom functions
+source ~/.zsh_fns
 
 # kubectl completion
 source <(kubectl completion zsh)
@@ -136,12 +139,19 @@ AUTOENV_ENABLE_LEAVE=yes
 # brew install zsh-autosuggestions zsh-syntax-highlighting
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# configure highlighting and auto-suggestions
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='bg=235,fg=100'
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 
 # VKE completion
 source ~/.completion/vke_bash_completion.sh
+
+# gcloud completion
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 # CDPATH
 setopt auto_cd
