@@ -18,6 +18,8 @@ alias myip='curl ipinfo.io/ip'
 
 # Applications
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+alias kctx=kubectx
+alias kns=kubens
 
 # Variables
 export EMBA=/Users/${USER}/GO/src/github.com/embano1
