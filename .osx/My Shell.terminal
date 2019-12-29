@@ -705,6 +705,8 @@
 	</data>
 	<key>FontAntialias</key>
 	<true/>
+	<key>FontHeightSpacing</key>
+	<real>1.0300802139037433</real>
 	<key>FontWidthSpacing</key>
 	<real>0.99596774193548387</real>
 	<key>ProfileCurrentVersion</key>
@@ -787,10 +789,24 @@
 	</data>
 	<key>ShouldLimitScrollback</key>
 	<integer>0</integer>
-	<key>ShowRepresentedURLInTitle</key>
+	<key>ShowActiveProcessInTabTitle</key>
 	<false/>
-	<key>ShowTTYNameInTitle</key>
+	<key>ShowActiveProcessInTitle</key>
+	<false/>
+	<key>ShowCommandKeyInTitle</key>
+	<false/>
+	<key>ShowDimensionsInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTabTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTitle</key>
 	<true/>
+	<key>ShowRepresentedURLPathInTitle</key>
+	<false/>
+	<key>ShowShellCommandInTitle</key>
+	<true/>
+	<key>ShowTTYNameInTitle</key>
+	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
 	<key>TerminalType</key>
@@ -955,6 +971,10 @@
 		<string>[34~</string>
 		<key>F728</key>
 		<string>[3~</string>
+		<key>^F700</key>
+		<string>[1;5A</string>
+		<key>^F701</key>
+		<string>[1;5B</string>
 		<key>^F702</key>
 		<string>[1;5D</string>
 		<key>^F703</key>
@@ -1007,6 +1027,6 @@
 	<key>type</key>
 	<string>Window Settings</string>
 	<key>useOptionAsMetaKey</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
