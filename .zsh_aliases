@@ -4,7 +4,7 @@ alias d='dotfiles'
 
 # tmux
 # TODO: temporary fix for tmux until tmux release incorporates https://github.com/tmux/tmux/commit/c2fde58701d3d0a55ba15ba6004df7ca009175b9
-alias tmuxinit="~/Downloads/tmux/tmux new-session -n init \; split-window -dh \; select-pane -t 1 \; split-window -dv -p 80 'ctop' \; clock-mode \; select-pane -t 2 \; select-pane -t 0 \; new-window -n htop 'htop' \; select-window -t 1"
+alias tmuxinit="tmux new-session -n init \; split-window -dh \; select-pane -t 1 \; split-window -dv -p 80 'ctop' \; clock-mode \; select-pane -t 2 \; select-pane -t 0 \; new-window -n htop 'htop --sort-key=PERCENT_CPU' \; select-window -t 1"
 
 # Shell shortcuts
 alias c=clear

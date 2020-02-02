@@ -1,7 +1,3 @@
-function kindcfg() {
-	  export KUBECONFIG=`kind get kubeconfig-path --name=$1`
-  }
-
 # Updates editor information when the keymap changes.
 function zle-keymap-select() {
   zle reset-prompt
