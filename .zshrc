@@ -85,7 +85,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 #plugins=(git brew osx docker autoenv)
 # installed autoenv manually to get latest version with support for leave
 # https://github.com/kennethreitz/autoenv 
-plugins=(vi-mode git brew osx docker zsh-autopair)
+plugins=(vi-mode git brew osx docker zsh-autopair vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +121,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 source ~/.zsh_aliases
 
 # Custom functions
-source ~/.zsh_fns
+source ~/.zsh_fns.sh
 
 # kubectl completion
 source <(kubectl completion zsh)
