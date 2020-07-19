@@ -9,9 +9,17 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="cobalt2"
-ZSH_THEME="avit"
+#ZSH_THEME="avit"
+ZSH_THEME="oxide"
+#ZSH_THEME="typewritten"
+#ZSH_THEME="spaceship"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="bullet-train/bullet-train"
+
+# typewritten theme
+TYPEWRITTEN_GIT_RELATIVE_PATH=true
+TYPEWRITTEN_CURSOR=underscore
+TYPEWRITTEN_PROMPT_LAYOUT="pure"
 
 # bullet-train
 BULLETTRAIN_KCTX_KCONFIG="/Users/${USER}/.kube/config"
