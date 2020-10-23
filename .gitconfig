@@ -10,6 +10,8 @@
 	pager = 
 	editor = vim
 	autocrlf = input
+	excludesfile = /Users/mgasch/.gitignore
+	attributesfile = /Users/mgasch/.gitattributes
 
 [pager]
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
@@ -48,3 +50,5 @@
 	whitespace = red reverse
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
