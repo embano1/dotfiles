@@ -134,6 +134,9 @@ source ~/.zsh_fns.sh
 # kubectl completion
 source <(kubectl completion zsh)
 
+# pack completion
+source $(pack completion --shell zsh)
+
 # fuzzy find fzf
 # brew install fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -180,3 +183,12 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# kn (knative) completion
+source <(kn completion zsh)
+compdef _kn kn
+
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true

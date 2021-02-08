@@ -25,6 +25,7 @@ alias python=/usr/local/bin/python # make brew python3 default instead of OSX
 
 # Variables
 export EMBA=/Users/${USER}/GO/src/github.com/embano1
+export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=/Users/${USER}/GO
 export GOBIN=$GOPATH/bin
 export GOPRIVATE=*.vmware.com
